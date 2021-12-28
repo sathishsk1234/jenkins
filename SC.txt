@@ -1,0 +1,8 @@
+ Get-Module PSReadLine
+Import-Module PSReadLine
+
+
+
+if ([ScreenReaderFixUtil]::IsScreenReaderActive()) {
+    [ScreenReaderFixUtil]::SetScreenReaderActiveStatus($false)
+}
